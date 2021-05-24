@@ -35,6 +35,7 @@ button {
 	background: none;
 	box-shadow: none;
 	border: none;
+	cursor: pointer;
 }
 img {
 	max-width: 100%;
@@ -63,6 +64,8 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
+	height: auto;
+	width: 100vw;
 }
 .title {
 	display: flex;
@@ -95,12 +98,23 @@ header {
 	border: 1px solid white;
 	color: white;
 }
-.dropdown-content{
+.dropdown-content {
 	background-color: lightgrey;
 }
-.icon button i{
+
+.icon button i {
 	font-size: 180%;
 	color: white;
+}
+.up,
+.down {
+	color: hsl(13, 100%, 72%);
+}
+.sign-btn {
+	padding: 10px 20px;
+	background-color: hsl(13, 100%, 72%);
+	color: white;
+	border-radius: 15px;
 }
 /* ******************************* */
 /* SECTION FUTURE STYLES */
@@ -109,15 +123,7 @@ header {
 .section-future h1 {
 	margin: 20px 0px;
 }
-.image-detail {
-	background-image: url("images/illustration-editor-mobile.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 300px;
-	width: 300px;
-	margin: 0 auto;
-}
+
 /* ******************************* */
 /* SECTION MOBILE STYLES */
 /* ******************************* */
@@ -136,51 +142,17 @@ footer {
 	border-top-right-radius: 25%;
 	margin-bottom: 0;
 }
-/* ******************************* */
-/* MEDIA QUERIES STYLES */
-/* ******************************* */
-@media screen and (max-width: 720px) {
-	header{
-		height: 70vh;
-	}
-	.nav-content{
-		margin-top: 150px;
-	}
-	.heading {
-		position: relative;
-		z-index: 1;
-	}
-	.list {
-		position: absolute;
-		z-index: 2;
-		background-color: white;
-		border: 1px solid white;
-		width: 80%;
-		padding: 30px;
-		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-			rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-		justify-content: center;
-		text-align: center;
-		align-items: center;
-        line-height: 2rem;
-	}
-	.list li a {
-		color: hsl(240, 10%, 16%);
-	}
-    .list li .top{
-        margin: 10px 0px;
-    }
-}
+
 /* ******************************* */
 /* JAVASCRIPT APPLICATION STYLES */
 /* ******************************* */
-.show-flex{
+.show-flex {
 	display: inline-block;
 }
-.show{
+.show {
 	display: block;
 }
-.hide, #hide{
+.hide,
+#hide {
 	display: none;
 }
-

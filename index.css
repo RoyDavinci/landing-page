@@ -1,35 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
 /* ******************************* */
 /* GLOBAL STYLES */
 /* ******************************* */
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-body{
-    font-family: "Ubuntu", sans-serif;
+body {
+	font-family: "Ubuntu", sans-serif;
+	font-family: "Overpass", sans-serif;
+	font-size: 20px;
+	overflow-x: hidden;
+	width: 100vw;
 }
-ul{
-    list-style: none;
+ul {
+	list-style: none;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+	text-decoration: none;
+	color: black;
 }
-a:link, a:visited, a:active, a:focus{
-    text-decoration: none;
-    color: black;
+a:link,
+a:visited,
+a:active,
+a:focus {
+	text-decoration: none;
+	color: black;
+}
+h1 {
+	font-size: 150%;
+}
+button {
+	background: none;
+	box-shadow: none;
+	border: none;
+}
+img {
+	max-width: 100%;
+}
+section,
+footer {
+	padding: 40px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: hsl(208, 49%, 24%);
+	margin: 20px 0px;
+}
+section h1,
+footer h1 {
+	margin: 20px 0px;
 }
 /* ******************************* */
 /* HEADER STYLES */
 /* ******************************* */
 
-header{
-    padding: 30px;
+header {
+	padding: 30px;
+	background-image: url("images/pexels-karolina-grabowska-4040652.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
 }
-.title{
-    display: flex;
-    justify-content: space-between;
+.title {
+	display: flex;
+	justify-content: space-between;
 }
+.list li a {
+	color: white;
+}
+.nav-content {
+	margin: 40px auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	line-height: 2rem;
+}
+.buttons button {
+	padding: 15px 20px;
+	border-radius: 30px;
+	margin-left: 10px;
+	font-size: 80%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.start {
+	background-color: white;
+	color: hsl(13, 100%, 72%);
+}
+.learn {
+	border: 1px solid white;
+	color: white;
+}
+.dropdown-content{
+	background-color: lightgrey;
+}
+.icon button i{
+	font-size: 180%;
+	color: white;
+}
+/* ******************************* */
+/* SECTION FUTURE STYLES */
+/* ******************************* */
+
+.section-future h1 {
+	margin: 20px 0px;
+}
+.image-detail {
+	background-image: url("images/illustration-editor-mobile.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+}
+/* ******************************* */
+/* SECTION MOBILE STYLES */
+/* ******************************* */
+.section-phone {
+	background-image: url("image");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* ******************************* */
+/* FOOTER SECTION STYLES */
+/* ******************************* */
+footer {
+	background-color: hsl(240, 10%, 16%);
+	color: white;
+	border-top-right-radius: 25%;
+	margin-bottom: 0;
+}
+/* ******************************* */
+/* MEDIA QUERIES STYLES */
+/* ******************************* */
+@media screen and (max-width: 720px) {
+	header{
+		height: 70vh;
+	}
+	.nav-content{
+		margin-top: 150px;
+	}
+	.heading {
+		position: relative;
+		z-index: 1;
+	}
+	.list {
+		position: absolute;
+		z-index: 2;
+		background-color: white;
+		border: 1px solid white;
+		width: 80%;
+		padding: 30px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+			rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+        line-height: 2rem;
+	}
+	.list li a {
+		color: hsl(240, 10%, 16%);
+	}
+    .list li .top{
+        margin: 10px 0px;
+    }
+}
+/* ******************************* */
+/* JAVASCRIPT APPLICATION STYLES */
+/* ******************************* */
+.show-flex{
+	display: inline-block;
+}
+.show{
+	display: block;
+}
+.hide, #hide{
+	display: none;
+}
+
